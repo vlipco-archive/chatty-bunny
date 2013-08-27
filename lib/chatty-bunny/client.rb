@@ -33,7 +33,7 @@ module ChattyBunny
 
 			def rpc_methods(*methods)
 				methods.each do |m|
-					self.define_singleton_method m.to_sym, Proc.new {|*args| rpc_call __method__, args }
+					self.define_singleton_method m.to_sym, Proc.new {|args={}| rpc_call __method__, args }
 				end
 			end
 
