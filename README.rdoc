@@ -1,6 +1,6 @@
 = chatty-bunny
 
-Description goes here.
+Experimental RPC on top of Amazon SQS
 
 == Contributing to chatty-bunny
  
@@ -14,6 +14,6 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2013 David Pelaez. See LICENSE.txt for
-further details.
+Copyright (c) 2013 Vlipco S.A.S
+See LICENSE.txt for further details.
 
