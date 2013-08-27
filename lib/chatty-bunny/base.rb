@@ -1,7 +1,4 @@
-require 'json'
-#require 'aws-sdk'
-# for ActiveSupport::HashWithIndifferentAccess.new
-require 'active_support/hash_with_indifferent_access'
+
 
 module ChattyBunny
 
@@ -9,6 +6,10 @@ module ChattyBunny
 		def self.extended(base)
 
 			base.class_eval do
+				require 'json'
+				require 'aws-sdk'
+				# for ActiveSupport::HashWithIndifferentAccess.new
+				require 'active_support/hash_with_indifferent_access'
 
 				attr_reader :environment
 
