@@ -1,5 +1,5 @@
 require 'json'
-require 'aws-sdk'
+#require 'aws-sdk'
 # for ActiveSupport::HashWithIndifferentAccess.new
 require 'active_support/hash_with_indifferent_access'
 
