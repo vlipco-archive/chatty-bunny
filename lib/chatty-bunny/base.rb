@@ -23,7 +23,7 @@ module ChattyBunny
 				end
 
 				def sqs_client
-					@sqs_client ||= AWS::SQS.new
+					@sqs_client ||= ::AWS::SQS.new
 				end
 
 				def sqs_queue
@@ -47,7 +47,7 @@ module ChattyBunny
 				end
 
 				def body_to_hash(msg)
-					HashWithIndifferentAccess.new JSON.parse!(msg.body)
+					HashWithIndifferentAccess.new ::JSON.parse!(msg.body)
 				end
 			end
 
