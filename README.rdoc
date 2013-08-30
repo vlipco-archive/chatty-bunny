@@ -4,4 +4,4 @@ Experimental RPC on top of Amazon SQS
 
 == Unfeasability
  
-Even though this works, the latency introduced by the nature of SQS makes it unfeasable. A similar solution has been implemented in Redis and it works like a charm: https://github.com/nfarring/redisrpc
+Even though this works, the latency introduced by the nature of SQS makes it unfit for real use. A similar solution has been implemented in Redis and it works like a charm: https://github.com/nfarring/redisrpc
